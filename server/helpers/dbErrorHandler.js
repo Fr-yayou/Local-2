@@ -1,8 +1,7 @@
 "use strict";
 
-/**
- * Get unique error field name
- */
+//GET UNIQUE ERROR MESSAGE FILED NAME//
+
 const uniqueMessage = error => {
     let output;
     try {
