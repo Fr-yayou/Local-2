@@ -1,0 +1,49 @@
+.Navbar-container {
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container-logo {
+  margin-left: 24px;
+}
+
+.container-logo__cat {
+  height: 70px;
+}
+
+.container-link__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+}
+
+.container-link__list__home {
+  text-decoration: none;
+  margin-right: 30px;
+  color: black;
+}
+
+.container-link__list__home__signin {
+  text-decoration: none;
+  margin-right: 30px;
+  color: black;
+}
+
+.container-link__list__home__signin__signup {
+  text-decoration: none;
+  color: black;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+/*# sourceMappingURL=routes.css.map */

@@ -1,0 +1,40 @@
+//Desktop//
+
+.Navbar-container{
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container-logo{
+    margin-left: 24px;
+
+    &__cat{
+        height: 70px;
+    }
+}
+
+.container-link{
+    &__list{
+        display: flex;
+        list-style-type: none;
+
+        &__home{
+            text-decoration: none;
+            margin-right: 30px;
+            color:black;
+
+            &__signin{
+                text-decoration: none;
+                margin-right: 30px;
+                color:black;
+
+                &__signup{
+                    text-decoration: none;
+                    color:black;
+                }
+            }
+        }
+    }
+}
