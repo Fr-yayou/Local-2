@@ -24,6 +24,8 @@ const API = 'http://localhost:8000/api'
         
  }
 
+ //CREATE NEW PRODUCT
+
   export const createProduct = (userId, token, product) => {
          return fetch(`${API}/product/create/${userId}`, {
             method: 'POST',
@@ -43,6 +45,8 @@ const API = 'http://localhost:8000/api'
         })
         
   }
+
+  //GET THE CATEGORIES//
  
 export const getCategories = () => {
     return fetch(`${API}/categories`, {
