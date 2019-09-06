@@ -42,6 +42,42 @@
   color: black;
 }
 
+.userDashboard-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 40px;
+}
+
+.userDashboard-container__columnOne {
+  width: 20%;
+}
+
+.userDashboard-container__columnOne__columnTwo {
+  width: 80%;
+}
+
+.adminDashboard-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 40px;
+}
+
+.adminDashboard-container__columnOne {
+  width: 20%;
+}
+
+.adminDashboard-container__columnOne__columnTwo {
+  width: 80%;
+}
+
 * {
   margin: 0;
   padding: 0;
