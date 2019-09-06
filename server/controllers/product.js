@@ -35,14 +35,14 @@ exports.create = (req, res) => {
         }
         // CHECK ALL THE FIELD//   ///verify validation 
 
-        // const { name, description, price, category, quantity, shipping, } = fields
+        const { name, description, price, category, quantity, shipping, } = fields
         
-        // if (!name || !description || !price || !category || !quantity || !shipping) {
-        //     return res.status(400).json({
-        //         error: "All field require"
-        //     });
+        if (!name || !description || !price || !category || !quantity || !shipping) {
+            return res.status(400).json({
+                error: "All field require"
+            });
             
-        // }
+        }
         let product = new Product(fields);
         console.log(product)
 
@@ -99,14 +99,14 @@ exports.update = (req, res) => {
         }
         // CHECK ALL THE FIELD//   ///verify validation 
 
-        // const { name, description, price, category, quantity, shipping, } = fields
+        const { name, description, price, category, quantity, shipping, } = fields
         
-        // if (!name || !description || !price || !category || !quantity || !shipping) {
-        //     return res.status(400).json({
-        //         error: "All field require"
-        //     });
+        if (!name || !description || !price || !category || !quantity || !shipping) {
+            return res.status(400).json({
+                error: "All field require"
+            });
             
-        // }
+        }
         let product = req.product
         product = _.extend(product, fields);
         console.log(product)
