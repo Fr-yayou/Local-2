@@ -1,5 +1,8 @@
 //DESKTOP//
 
-img{
-    width: 25%
+.ShowImage-container{
+
+    &__photo{
+        width: 100%;
+    }
 }

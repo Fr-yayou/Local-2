@@ -19,3 +19,14 @@
     justify-content: center;
     
 }
+
+.container-title{
+
+    &__arrival{
+        font-size: 36px;
+
+        &__best{
+            font-size: 36px;
+        }
+    }
+}

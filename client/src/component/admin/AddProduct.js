@@ -86,7 +86,7 @@ const AddProduct = () => {
     };
 
     const showError = () => (
-        <div style={{ display: error ? '': 'none' }}>
+        <div className="container-showError" style={{ display: error ? '': 'none' }}>
             {error}
 
         </div>
@@ -94,7 +94,7 @@ const AddProduct = () => {
     //DOUBLE CHECK THE BCK END //
 
     const showSucess = () => (
-        <div style={{ display: createdProduct ? '' : 'none' }}>
+        <div className="container-showSucess" style={{ display: createdProduct ? '' : 'none' }}>
             <h2>{`${createdProduct}`} is created</h2>
         </div>
     )
@@ -106,10 +106,10 @@ const AddProduct = () => {
     )
 
     const newPostForm = () => (
-        <form className="mb-3" onSubmit={clickSubmit}>
-            <h4>Post Photo</h4>
-            <div className="form-group">
-                <label className="btn btn-secondary">
+        <form className="AddProduct-container" onSubmit={clickSubmit}>
+            <h4 className="AddProduct-container__title">Post Photo</h4>
+            <div>
+                <label>
                     <input
                         onChange={handleChange("photo")}
                         type="file"
@@ -119,43 +119,43 @@ const AddProduct = () => {
                 </label>
             </div>
 
-            <div>
-                <label>Name</label>
-                <input onChange={handleChange("name")} type="text" value={name}/>
+            <div className="container-input">
+                <label className="container-input__name">Name</label>
+                <input className="container-input__name__type" onChange={handleChange("name")} type="text" value={name}/>
             </div>
 
-            <div>
-                <label>Description</label>
-                <textarea onChange={handleChange("description")} value={description}/>
+            <div  className="container-input">
+                <label className="container-input__name">Description</label>
+                <textarea className="container-input__name__type" onChange={handleChange("description")} value={description}/>
             </div>
 
-            <div>
-                <label>Price</label>
-                <input onChange={handleChange("price")} type="number" value={price}/>
+            <div className="container-input">
+                <label className="container-input__name">Price</label>
+                <input className="container-input__name__type" onChange={handleChange("price")} type="number" value={price}/>
             </div>
 
-            <div>
-                <label>Category</label>
-                <select onChange={handleChange("category")}>
+            <div className="container-input">
+                <label className="container-input__name">Category</label>
+                <select className="container-input__name__type" onChange={handleChange("category")}>
                     <option>Please select</option>
                     {categories && categories.map((c, i) => (<option key={i} value={c._id}>{c.name}</option>))}
                 </select>
             </div>
 
-            <div>
-                <label>Shipping</label>
-                <select onChange={handleChange("shipping")}>
+            <div className="container-input">
+                <label className="container-input__name">Shipping</label>
+                <select className="container-input__name__type" onChange={handleChange("shipping")}>
                     <option>Please select</option>
                     <option value="0">No</option>
                     <option value="1">Yes</option>
                 </select>
             </div>
 
-            <div>
-                <label>Quantity</label>
-                <input onChange={handleChange("quantity")} type="number" value={quantity}/>
+            <div className="container-input">
+                <label className="container-input__name">Quantity</label>
+                <input className="container-input__name__type" onChange={handleChange("quantity")} type="number" value={quantity}/>
             </div>
-            <button>Create Product</button>
+            <button className="container-btn-AddProduct">Create Product</button>
         </form>
     );
 

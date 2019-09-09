@@ -6,4 +6,85 @@
     margin-right: 24px;
     margin-top: 20px;
     margin-bottom: 20px;
+    box-shadow: 0 5px 20px rgba(0,0,0,.25);
+    border-radius: 6px;
+    transition:transform 300 ms, box-shadow 300ms;
+
+    &__card{
+
+        &__header{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50px;
+            border-bottom:1px solid #cf3333;
+
+            &__title{
+                color:#cf3333;
+                font-size: 24px;
+                font-family: 'Lemonada', cursive;
+                
+                
+                &__body{
+                    margin-left: 15px;
+                    margin-right: 15px;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
+.container-card:hover{
+    transform: scale(1.1);
+    box-shadow: 0 15px 40px rgba(0,0,0,.25);
+}
+
+.container-btn-card{
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    margin-top: 15px;
+    margin-bottom: 15px;
+
+    &__viewProduct{
+        height: 40px;
+        border-radius: 6px;
+        background-color:#cf3333;
+        outline: none;
+        color: white;
+        font-size:16px;
+        width: 100%;
+
+
+        &__cart{
+
+            background-color:white;
+            color:#cf3333;
+            border: 1px solid #cf3333;
+            border-radius: 6px;
+            outline: none; 
+            width: 150px;
+            font-size:16px;
+        
+
+        }
+        &__cart:hover{
+             height: 40px;
+             border-radius: 6px;
+             background-color:#cf3333;
+             color: white;
+
+        }
+    }
+    &__viewProduct:hover{
+        background-color:white;
+        color:#cf3333;
+        border: 1px solid #cf3333;
+        border-radius: 6px;
+
+    }
+}
+
+#btn{
+    width: 150px;
 }

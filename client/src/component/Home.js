@@ -36,15 +36,15 @@ const Home = () => {
 
 
     return (
-        <Layout title="Home Page" description='Candle'>
+        <Layout title="Home Page" description=''>
             <div className="container-title">
-               <h2>New Arrivals</h2>
+               <h2 className="container-title__arrival">New Arrivals</h2>
             </div>
             <div className="container-productByArrival">
                 {productsByArrival.map((product, i) => (<Card key={i} product={product}/>))}
             </div>
             <div className="container-title">
-              <h2>Best Sellers</h2>  
+              <h2 className="container-title__arrival__best">Best Sellers</h2>  
             </div>
             <div className="container-productBySell">
                {productsBySell.map((product, i) => (<Card key={i} product={product} />))} 

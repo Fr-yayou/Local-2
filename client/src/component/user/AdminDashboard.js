@@ -9,23 +9,23 @@ const AdminDashboard = () => {
     
     const adminLinks = () => {
         return (
-            <div>
-                <h4> Admin Links</h4>
-                  <ul>
-                    <li><Link to="/create/category">Create Category</Link></li>
-                    <li><Link to="/create/product">Create Product</Link></li>
+            <div className="container-adminLink">
+                <h4 className="container-adminLink__title"> Admin Links</h4>
+                  <ul className="container-adminLink__title__list">
+                    <li id="space"><Link className="container-adminLink__title__list__cat" to="/create/category">Create Category</Link></li>
+                    <li><Link className="container-adminLink__title__list__cat__prod" to="/create/product">Create Product</Link></li>
                 </ul>
             </div>
         )
     }
     const AdminInfos = () => {
         return (
-             <div>
-                <h3>User Information</h3>
-                <ul>
-                    <li>{name}</li>
-                    <li>{email}</li>
-                    <li>{role === 1 ? 'Admin' : 'Registered User'}</li>
+             <div className="container-adminInfos">
+                <h3 className="container-adminInfos__title">User Information</h3>
+                <ul className="container-adminInfos__title__list">
+                    <li  className="container-adminInfos__title__list__name">{name}</li>
+                    <li className="container-adminInfos__title__list__name__email">{email}</li>
+                    <li className="container-adminInfos__title__list__name__email__role">{role === 1 ? 'Admin' : 'Registered User'}</li>
                 </ul>
             </div>
         )
@@ -39,7 +39,7 @@ const AdminDashboard = () => {
                 <div className="adminDashboard-container__columnOne">
                     {adminLinks()}
                 </div>
-                <div className="adminDashboard-container__column1__columnTwo">
+                <div className="adminDashboard-container__columnOne__columnTwo">
                     {AdminInfos()}
                 </div>
             </div>

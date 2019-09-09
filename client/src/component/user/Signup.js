@@ -42,34 +42,37 @@ const Signup = () => {
 
     }
     const showError = () => (
-        <div className="alert" style={{ display: error ? '' : 'none' }}>
+        <div className="alert-SignUp" style={{ display: error ? '' : 'none' }}>
                  {error}
         </div>
     )
 
     const showSucess = () => (
-        <div className="alert" style={{ display: sucess ? '' : 'none' }}>
+        <div className="sucess-SignUp" style={{ display: sucess ? '' : 'none' }}>
             New account is created.Please  <Link to="/signin">Signin</Link>
 
         </div>
     )
 
-    const signUpForm =() => (
-        <form>
-            <div>
-                <label>Name</label>
-                <input onChange={handleChange('name')}  type="text" placeholder="Name" value={name} />
-            </div>
-            <div>
-                <label>Email</label>
-                <input onChange={handleChange ('email')} type="text" placeholder="Email" value={email} />
-            </div>
-             <div>
-                <label>Password</label>
-                <input onChange={handleChange ('password')}  type="password" placeholder="Password" value={password} />
-            </div>
-            <button onClick={clickSubmit}>Submit</button>
-        </form>
+    const signUpForm = () => (
+        <div className="container-signUp">
+            <form className="container-signUp__form">
+                <div className="container-formSignUp">
+                    <label className="container-formSignUp__name">Name</label>
+                    <input className="container-formSignUp__name__nameInput" onChange={handleChange('name')}  type="text" placeholder="Name" value={name} />
+                </div>
+                <div className="container-formSignUp">
+                    <label className="container-formSignUp__name__nameInput__email" >Email</label>
+                    <input className="container-formSignUp__name__nameInput__email__emailInput" onChange={handleChange ('email')} type="text" placeholder="Email" value={email} />
+                </div>
+                 <div className="container-formSignUp">
+                    <label className="container-formSignUp__name__nameInput__email__emailInput__password">Password</label>
+                    <input className="container-formSignUp__name__nameInput__email__emailInput__password__passwordInput" onChange={handleChange ('password')}  type="password" placeholder="Password" value={password} />
+                </div>
+                <button className="btn-signUp" onClick={clickSubmit}>SignUp</button>
+            </form>
+
+        </div>
     )
     return (
         <Layout title="Signup" description='Signup to Local'>

@@ -21,7 +21,7 @@ const UserDashboard = () => {
     const userInfos = () => {
         return (
              <div>
-                <h3>User Information</h3>
+                <h3>User Informations</h3>
                 <ul>
                     <li>{name}</li>
                     <li>{email}</li>
@@ -50,7 +50,7 @@ const UserDashboard = () => {
                 <div className="userDashboard-container__columnOne">
                     {userLinks()}
                 </div>
-                <div className="userDashboard-container__column1__columnTwo">
+                <div className="userDashboard-container__columnOne__columnTwo">
                     {userInfos()}
                     {userHistory()}
                 </div>

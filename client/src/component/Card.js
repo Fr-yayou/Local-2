@@ -7,15 +7,19 @@ const Card = ({ product }) => {
     return (
         <div className='container-card'>
             <div className='container-card__card'>
-                    <div className='container-card__card__header'>{product.name}</div>
-                <div className='container-card__card__header__body'>
+                <div className='container-card__card__header'>
+                    <h2 className='container-card__card__header__title'>{product.name}</h2>
+                </div>
+                <div className='container-card__card__header__title__body'>
                     <ShowImage item={product} url="products"/>
                     <p>{product.description}</p>
-                    <p>{product.price}</p>
-                    <Link to='/'>
-                    <button>View Product</button>
-                    </Link>
-                <button>Add product to card</button>
+                    <p>${product.price}</p>
+                    <div className="container-btn-card">
+                        <Link id="btn" to='/'>
+                            <button className="container-btn-card__viewProduct">Product</button>
+                        </Link>
+                        <button className="container-btn-card__viewProduct__cart">Add to Cart</button>
+                    </div>
 
                 </div>
             </div>

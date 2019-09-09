@@ -1,0 +1,113 @@
+//Desktop//
+
+.container-signUp{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    margin-right: 180px;
+    margin-left: 180px;
+
+    &__form{
+        width: 100%
+    }
+}
+
+.container-formSignUp{
+    display: flex;
+    flex-direction: column;
+
+    &__name{
+        font-size: 16px;
+
+        &__nameInput{
+            height: 40px;
+            outline: none;
+            border-radius: 6px;
+            background-color:#FAFAFA;
+            border: 1px solid #e1e1e1;
+            text-indent: 20px;
+            margin-bottom: 10px;
+
+            &__email{
+                font-size: 16px;
+
+                &__emailInput{
+                    height: 40px;
+                    outline: none;
+                    border-radius: 6px;
+                    background-color:#FAFAFA;
+                    border: 1px solid #e1e1e1;
+                    text-indent: 20px;
+                    margin-bottom: 10px;
+
+                    &__password{
+                        font-size: 16px;
+
+                        &__passwordInput{
+                            height: 40px;
+                            outline: none;
+                            border-radius: 6px;
+                            background-color:#FAFAFA;
+                            border: 1px solid #e1e1e1;
+                            text-indent: 20px;
+                        }
+                        &__passwordInput:hover{
+                            border:solid 1px #cf3333;
+                        }
+                    }
+
+                }
+                &__emailInput:hover{
+                    border:solid 1px #cf3333;
+                }
+            }
+        }
+        &__nameInput:hover{
+            border:solid 1px #cf3333;
+        }
+    }
+}
+
+.btn-signUp{
+    margin-top: 15px;
+    width: 100%;
+    height: 40px;
+    width: 100%;
+    border-radius: 6px;
+    background-color:#cf3333;
+    outline: none;
+    color: white;
+    font-size: 16px;
+
+}
+.btn-signUp:hover{
+        background-color:white;
+        color:#cf3333;
+        border: 1px solid #cf3333; 
+}
+
+.alert-SignUp{
+    height: 40px;
+    margin-left: 180px;
+    margin-right:180px;
+    border-radius:6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    color: #D8000C;
+    background-color: #FFD2D2;
+}
+
+.sucess-SignUp{
+    height: 40px;
+    margin-left: 180px;
+    margin-right:180px;
+    border-radius:6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    color: #4F8A10;
+    background-color: #DFF2BF;
+}

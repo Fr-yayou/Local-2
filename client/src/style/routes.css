@@ -28,18 +28,15 @@
 .container-link__list__home {
   text-decoration: none;
   margin-right: 30px;
-  color: black;
 }
 
 .container-link__list__home__signin {
   text-decoration: none;
   margin-right: 30px;
-  color: black;
 }
 
 .container-link__list__home__signin__signup {
   text-decoration: none;
-  color: black;
 }
 
 .userDashboard-container {
@@ -67,15 +64,78 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 40px;
+  margin-top: 50px;
 }
 
 .adminDashboard-container__columnOne {
-  width: 20%;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-right: 1px solid #cf3333;
 }
 
 .adminDashboard-container__columnOne__columnTwo {
-  width: 80%;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container-adminLink__title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #cf3333;
+}
+
+.container-adminLink__title__list {
+  list-style: none;
+}
+
+.container-adminLink__title__list__cat {
+  text-decoration: none;
+}
+
+.container-adminLink__title__list__cat__prod {
+  text-decoration: none;
+}
+
+.container-adminLink__title__list__cat__prod:hover {
+  color: #cf3333;
+  font-size: 20px;
+}
+
+.container-adminLink__title__list__cat:hover {
+  color: #cf3333;
+  font-size: 20px;
+}
+
+.container-adminInfos__title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #cf3333;
+}
+
+.container-adminInfos__title__list {
+  list-style: none;
+}
+
+.container-adminInfos__title__list__name {
+  margin-bottom: 10px;
+}
+
+.container-adminInfos__title__list__name__email {
+  margin-bottom: 10px;
+}
+
+#space {
+  margin-bottom: 10px;
 }
 
 .container-title {
@@ -110,20 +170,465 @@
           justify-content: center;
 }
 
+.container-title__arrival {
+  font-size: 36px;
+}
+
+.container-title__arrival__best {
+  font-size: 36px;
+}
+
 .container-card {
   width: 25%;
   margin-left: 24px;
   margin-right: 24px;
   margin-top: 20px;
   margin-bottom: 20px;
+  -webkit-box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25);
+  border-radius: 6px;
+  -webkit-transition: -webkit-transform 300 ms, -webkit-box-shadow 300ms;
+  transition: -webkit-transform 300 ms, -webkit-box-shadow 300ms;
+  transition: transform 300 ms, box-shadow 300ms;
+  transition: transform 300 ms, box-shadow 300ms, -webkit-transform 300 ms, -webkit-box-shadow 300ms;
 }
 
-img {
-  width: 25%;
+.container-card__card__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 50px;
+  border-bottom: 1px solid #cf3333;
+}
+
+.container-card__card__header__title {
+  color: #cf3333;
+  font-size: 24px;
+  font-family: 'Lemonada', cursive;
+}
+
+.container-card__card__header__title__body {
+  margin-left: 15px;
+  margin-right: 15px;
+  font-size: 16px;
+}
+
+.container-card:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+}
+
+.container-btn-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.container-btn-card__viewProduct {
+  height: 40px;
+  border-radius: 6px;
+  background-color: #cf3333;
+  outline: none;
+  color: white;
+  font-size: 16px;
+  width: 100%;
+}
+
+.container-btn-card__viewProduct__cart {
+  background-color: white;
+  color: #cf3333;
+  border: 1px solid #cf3333;
+  border-radius: 6px;
+  outline: none;
+  width: 150px;
+  font-size: 16px;
+}
+
+.container-btn-card__viewProduct__cart:hover {
+  height: 40px;
+  border-radius: 6px;
+  background-color: #cf3333;
+  color: white;
+}
+
+.container-btn-card__viewProduct:hover {
+  background-color: white;
+  color: #cf3333;
+  border: 1px solid #cf3333;
+  border-radius: 6px;
+}
+
+#btn {
+  width: 150px;
+}
+
+.ShowImage-container__photo {
+  width: 100%;
+}
+
+.AddProduct-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 20px;
+  margin-left: 180px;
+  margin-right: 180px;
+}
+
+.AddProduct-container__title {
+  margin-bottom: 20px;
+  color: #323232;
+  font-size: 24px;
+}
+
+.container-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.container-input__name {
+  color: #323232;
+}
+
+.container-input__name__type {
+  height: 40px;
+  outline: none;
+  border-radius: 6px;
+  background-color: #FAFAFA;
+  border: 1px solid #e1e1e1;
+}
+
+.container-input__name__type:hover {
+  border: solid 1px #cf3333;
+}
+
+.container-btn-AddProduct {
+  margin-bottom: 24px;
+  height: 40px;
+  width: 100%;
+  border-radius: 6px;
+  background-color: #cf3333;
+  outline: none;
+  color: white;
+  font-size: 16px;
+}
+
+.container-btn-AddProduct:hover {
+  background-color: white;
+  color: #cf3333;
+  border: 1px solid #cf3333;
+}
+
+.container-showError {
+  height: 40px;
+  margin-left: 180px;
+  margin-right: 180px;
+  border-radius: 6px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 20px;
+  color: #D8000C;
+  background-color: #FFD2D2;
+}
+
+.container-showSucess {
+  height: 40px;
+  margin-left: 180px;
+  margin-right: 180px;
+  border-radius: 6px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 20px;
+  color: #4F8A10;
+  background-color: #DFF2BF;
+}
+
+.Layout-container__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container-signIn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 40px;
+  margin-right: 180px;
+  margin-left: 180px;
+}
+
+.container-signIn__form {
+  width: 100%;
+}
+
+.container-formSignIn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container-formSignIn__email__inputEmail {
+  height: 40px;
+  outline: none;
+  border-radius: 6px;
+  background-color: #FAFAFA;
+  border: 1px solid #e1e1e1;
+  text-indent: 20px;
+  margin-bottom: 10px;
+}
+
+.container-formSignIn__email__inputEmail__password__inputPassword {
+  height: 40px;
+  outline: none;
+  border-radius: 6px;
+  background-color: #FAFAFA;
+  border: 1px solid #e1e1e1;
+  text-indent: 20px;
+}
+
+.container-formSignIn__email__inputEmail__password__inputPassword:hover {
+  border: solid 1px #cf3333;
+}
+
+.container-formSignIn__email__inputEmail:hover {
+  border: solid 1px #cf3333;
+}
+
+.btn-signIn {
+  margin-top: 15px;
+  width: 100%;
+  height: 40px;
+  width: 100%;
+  border-radius: 6px;
+  background-color: #cf3333;
+  outline: none;
+  color: white;
+  font-size: 16px;
+}
+
+.btn-signIn:hover {
+  background-color: white;
+  color: #cf3333;
+  border: 1px solid #cf3333;
+}
+
+.alert-SignIn {
+  height: 40px;
+  margin-left: 180px;
+  margin-right: 180px;
+  border-radius: 6px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 20px;
+  color: #D8000C;
+  background-color: #FFD2D2;
+}
+
+.container-signUp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 40px;
+  margin-right: 180px;
+  margin-left: 180px;
+}
+
+.container-signUp__form {
+  width: 100%;
+}
+
+.container-formSignUp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container-formSignUp__name {
+  font-size: 16px;
+}
+
+.container-formSignUp__name__nameInput {
+  height: 40px;
+  outline: none;
+  border-radius: 6px;
+  background-color: #FAFAFA;
+  border: 1px solid #e1e1e1;
+  text-indent: 20px;
+  margin-bottom: 10px;
+}
+
+.container-formSignUp__name__nameInput__email {
+  font-size: 16px;
+}
+
+.container-formSignUp__name__nameInput__email__emailInput {
+  height: 40px;
+  outline: none;
+  border-radius: 6px;
+  background-color: #FAFAFA;
+  border: 1px solid #e1e1e1;
+  text-indent: 20px;
+  margin-bottom: 10px;
+}
+
+.container-formSignUp__name__nameInput__email__emailInput__password {
+  font-size: 16px;
+}
+
+.container-formSignUp__name__nameInput__email__emailInput__password__passwordInput {
+  height: 40px;
+  outline: none;
+  border-radius: 6px;
+  background-color: #FAFAFA;
+  border: 1px solid #e1e1e1;
+  text-indent: 20px;
+}
+
+.container-formSignUp__name__nameInput__email__emailInput__password__passwordInput:hover {
+  border: solid 1px #cf3333;
+}
+
+.container-formSignUp__name__nameInput__email__emailInput:hover {
+  border: solid 1px #cf3333;
+}
+
+.container-formSignUp__name__nameInput:hover {
+  border: solid 1px #cf3333;
+}
+
+.btn-signUp {
+  margin-top: 15px;
+  width: 100%;
+  height: 40px;
+  width: 100%;
+  border-radius: 6px;
+  background-color: #cf3333;
+  outline: none;
+  color: white;
+  font-size: 16px;
+}
+
+.btn-signUp:hover {
+  background-color: white;
+  color: #cf3333;
+  border: 1px solid #cf3333;
+}
+
+.alert-SignUp {
+  height: 40px;
+  margin-left: 180px;
+  margin-right: 180px;
+  border-radius: 6px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 20px;
+  color: #D8000C;
+  background-color: #FFD2D2;
+}
+
+.sucess-SignUp {
+  height: 40px;
+  margin-left: 180px;
+  margin-right: 180px;
+  border-radius: 6px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 20px;
+  color: #4F8A10;
+  background-color: #DFF2BF;
 }
 
 * {
   margin: 0;
   padding: 0;
+  font-family: 'Allerta Stencil', sans-serif;
+  color: #323232;
 }
 /*# sourceMappingURL=routes.css.map */

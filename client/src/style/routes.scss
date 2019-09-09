@@ -4,8 +4,14 @@
 @import "./partiels/home";
 @import "./partiels/card";
 @import "./partiels//showImage";
+@import "./partiels/addProduct";
+@import "./partiels/layout";
+@import "./partiels/signIn";
+@import "./partiels/signUp";
 
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Allerta Stencil', sans-serif;
+    color:#323232;
 }

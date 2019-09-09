@@ -42,7 +42,7 @@ const Signin = () => {
 
     }
     const showError = () => (
-        <div className="alert" style={{ display: error ? '' : 'none' }}>
+        <div className="alert-SignIn" style={{ display: error ? '' : 'none' }}>
                  {error}
         </div>
     )
@@ -68,18 +68,21 @@ const Signin = () => {
         }
     }
 
-    const signUpForm =() => (
-        <form>
-            <div>
-                <label>Email</label>
-                <input onChange={handleChange ('email')} type="text" placeholder="Email" value={email} />
-            </div>
-             <div>
-                <label>Password</label>
-                <input onChange={handleChange ('password')}  type="password" placeholder="Password" value={password} />
-            </div>
-            <button onClick={clickSubmit}>Submit</button>
-        </form>
+    const signUpForm = () => (
+        <div className="container-signIn">
+            <form className="container-signIn__form">
+                <div className="container-formSignIn">
+                    <label className="container-formSignIn__email">Email</label>
+                    <input className="container-formSignIn__email__inputEmail" onChange={handleChange ('email')} type="text" placeholder="Email" value={email} />
+                </div>
+                <div className="container-formSignIn">
+                    <label className="container-formSignIn__email__inputEmail__password">Password</label>
+                    <input className="container-formSignIn__email__inputEmail__password__inputPassword" onChange={handleChange ('password')}  type="password" placeholder="Password" value={password} />
+                </div>
+                <button className="btn-signIn" onClick={clickSubmit}>SignIn</button>
+            </form>
+        </div>
+
     )
     return (
         <Layout title="Signup" description='Signup to Local'>
