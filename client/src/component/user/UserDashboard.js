@@ -9,23 +9,23 @@ const UserDashboard = () => {
     
     const userLinks = () => {
         return (
-            <div>
-                <h4>Links</h4>
-                  <ul>
-                    <li><Link to="/cart">My Cart</Link></li>
-                    <li><Link to="/profile/update">Update Profile</Link></li>
+            <div className="container-userLink">
+                <h4 className="container-userLink__title">Links</h4>
+                  <ul className="container-userLink__title__list">
+                    <li id="cart"><Link className="container-userLink__title__list__cart"to="/cart">My Cart</Link></li>
+                    <li><Link className="container-userLink__title__list__cart__update" to="/profile/update">Update Profile</Link></li>
                 </ul>
             </div>
         )
     }
     const userInfos = () => {
         return (
-             <div>
-                <h3>User Informations</h3>
-                <ul>
-                    <li>{name}</li>
-                    <li>{email}</li>
-                    <li>{role === 1 ? 'Admin' : 'Registered User'}</li>
+             <div className="container-userInfo">
+                <h3 className="container-userInfo__title">User Informations</h3>
+                <ul className="container-userInfo__title__list">
+                    <li className="container-userInfo__title__list__name">{name}</li>
+                    <li className="container-userInfo__title__list__name__email">{email}</li>
+                    <li className="container-userInfo__title__list__name__email__role">{role === 1 ? 'Admin' : 'Registered User'}</li>
                 </ul>
             </div>
         )
@@ -33,10 +33,10 @@ const UserDashboard = () => {
 
     const userHistory = () => {
         return (
-               <div>
-                <h3>Purchase History</h3>
-                <ul>
-                    <li>History</li>
+               <div className="container-userHistory">
+                <h3 className="container-userHistory__title">Purchase History</h3>
+                <ul className="container-userHistory__title__list">
+                    <li className="container-userHistory__title__list__histo">History</li>
                 </ul>
             </div>
         )
@@ -52,7 +52,9 @@ const UserDashboard = () => {
                 </div>
                 <div className="userDashboard-container__columnOne__columnTwo">
                     {userInfos()}
-                    {userHistory()}
+                </div>
+                <div className="userDashboard-container__columnOne__columnTwo__columnThree">
+                     {userHistory()}
                 </div>
             </div>
         </Layout>

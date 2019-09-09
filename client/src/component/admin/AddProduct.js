@@ -85,6 +85,12 @@ const AddProduct = () => {
         });
     };
 
+    const goBack = () => (
+        <div className="container-backDash">
+            <Link className="container-backDash__dashboard" to="/admin/dashboard">Back to Dashboard</Link>
+    </div>
+    )
+
     const showError = () => (
         <div className="container-showError" style={{ display: error ? '': 'none' }}>
             {error}
@@ -166,7 +172,9 @@ const AddProduct = () => {
                     {showLoading()}
                     {showSucess()}
                     {showError()}
-                    {newPostForm()}</div>
+                    {newPostForm()}
+                    {goBack()}
+                </div>
             </div>
         </Layout>
     );

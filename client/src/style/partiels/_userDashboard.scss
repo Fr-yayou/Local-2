@@ -3,14 +3,96 @@
 .userDashboard-container{
     display: flex;
     justify-content: center;
-    margin-top: 40px;
+    margin-top: 50px;
 
 
     &__columnOne{
-        width: 20%;
+        width: 33%;
+        display: flex;
+        justify-content: center;
+        border-right: 1px solid #cf3333;
 
         &__columnTwo{
-            width: 80%;
+            width: 33%;
+            display: flex;
+            justify-content: center;
+            border-right: 1px solid #cf3333;
+
+            &__columnThree{
+                width: 33%;
+                display: flex;
+                justify-content: center;
+            }
         }
     }
+}
+
+.container-userLink{
+    &__title{
+        font-size:24px;
+        margin-bottom: 20px;
+         border-bottom: 1px solid #cf3333;
+
+        &__list{
+            list-style: none;
+
+            &__cart{
+                text-decoration: none;
+
+                &__update{
+
+                    text-decoration: none;
+                }
+                &__update:hover{
+                    color:#cf3333;
+                    font-size: 20px
+                }
+            }
+            &__cart:hover{
+                color:#cf3333;
+                font-size: 20px
+            }
+
+        }
+    }
+}
+
+.container-userInfo{
+
+    &__title{
+        font-size:24px;
+        margin-bottom: 20px;
+        border-bottom: 1px solid #cf3333;
+
+        &__list{
+            list-style: none;
+
+            &__name{
+                margin-bottom: 10px;
+
+                &__email{
+                    margin-bottom: 10px;
+                }
+            }
+
+        }
+
+    }
+}
+
+.container-userHistory{
+    &__title{
+
+        font-size:24px;
+        margin-bottom: 20px;
+        border-bottom: 1px solid #cf3333;
+        
+        &__list{
+            list-style: none;
+        }
+    }
+}
+
+#cart{
+    margin-bottom: 10px;
 }

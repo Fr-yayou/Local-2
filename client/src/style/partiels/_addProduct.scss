@@ -81,6 +81,22 @@
     background-color: #DFF2BF;
 }
 
+.container-backDash{
+    display: flex;
+    justify-content: center;
+
+    &__dashboard{
+        font-size: 16px;
+        text-decoration: none;
+        margin-bottom: 20px;
+    }
+    &__dashboard:hover{
+
+        color:#cf3333;
+        font-size: 20px
+    }
+}
+
 
 
 

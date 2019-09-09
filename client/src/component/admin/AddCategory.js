@@ -16,7 +16,7 @@ const AddCategory = () => {
     const { user, token } = isAuthenticated()
 
     const handleChange = (e) => {
-        setError('')
+        setError("")
         setName(e.target.value)
         
     }
@@ -36,29 +36,31 @@ const AddCategory = () => {
     };
     
     const newCategoryForm = () => (
-        <form onSubmit={clickSubmit}>
-            <div>
-                <label>Name</label>
-                <input type="text" onChange={handleChange} value={name}/>
-            </div>
+        <div className="container-newCategory">
+             <form className="container-newCategory__form" onSubmit={clickSubmit}>
+                <div className="container-newCategory__form__category">
+                    <label className="container-newCategory__form__category__name">Name</label>
+                    <input className="container-newCategory__form__category__name__nameInput" type="text" onChange={handleChange} value={name}/>
+                </div>
             
-            <button>Create Category</button>
-        </form>
+                <button className="btn-CreateCategory">Create Category</button>
+            </form>
+        </div>
     )
 
     const showSucess = () => {
         if (sucess) {
-            return <h3>{name} is created</h3>
+            return <h3 className="created">{name} is created</h3>
         }
     }
        const showError = () => {
         if (error) {
-            return <h3>Category should be unique</h3>
+            return <h3 className="err">Category should be unique</h3>
         }
        }
     const goBack = () => (
-        <div>
-            <Link to="/admin/dashboard">Back to Dashboard</Link>
+        <div className="container-back">
+            <Link className="container-back__dashboard" to="/admin/dashboard">Back to Dashboard</Link>
         </div>
     )
     
