@@ -34,6 +34,14 @@
 
                 &__prod{
                     text-decoration: none;
+
+                    &__manage{
+                        text-decoration: none;   
+                    }
+                    &__manage:hover{
+                        color:#cf3333;
+                        font-size: 20px
+                    }
                 }
                 &__prod:hover{
                  color:#cf3333;
@@ -70,6 +78,6 @@
     }
 }
 
-#space{
+.space{
     margin-bottom: 10px;
 }

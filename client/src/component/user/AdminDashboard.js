@@ -12,8 +12,9 @@ const AdminDashboard = () => {
             <div className="container-adminLink">
                 <h4 className="container-adminLink__title"> Admin Links</h4>
                   <ul className="container-adminLink__title__list">
-                    <li id="space"><Link className="container-adminLink__title__list__cat" to="/create/category">Create Category</Link></li>
-                    <li><Link className="container-adminLink__title__list__cat__prod" to="/create/product">Create Product</Link></li>
+                    <li class="space"><Link className="container-adminLink__title__list__cat" to="/create/category">Create Category</Link></li>
+                    <li class="space"><Link className="container-adminLink__title__list__cat__prod" to="/create/product">Create Product</Link></li>
+                    <li><Link className="container-adminLink__title__list__cat__prod__manage" to="/admin/product">Manage Product</Link></li>
                 </ul>
             </div>
         )

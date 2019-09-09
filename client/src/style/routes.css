@@ -190,6 +190,15 @@
   text-decoration: none;
 }
 
+.container-adminLink__title__list__cat__prod__manage {
+  text-decoration: none;
+}
+
+.container-adminLink__title__list__cat__prod__manage:hover {
+  color: #cf3333;
+  font-size: 20px;
+}
+
 .container-adminLink__title__list__cat__prod:hover {
   color: #cf3333;
   font-size: 20px;
@@ -218,7 +227,7 @@
   margin-bottom: 10px;
 }
 
-#space {
+.space {
   margin-bottom: 10px;
 }
 
@@ -850,6 +859,91 @@
   margin-top: 20px;
   color: #D8000C;
   background-color: #FFD2D2;
+}
+
+.container-btn-Manage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 20%;
+}
+
+.container-btn-Manage__LinkUpdate {
+  width: 70px;
+  height: 30px;
+}
+
+.container-btn-Manage__LinkUpdate__btnOne {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  color: #cf3333;
+  border: 1px solid #cf3333;
+  outline: none;
+  font-size: 16px;
+  border-radius: 6px;
+}
+
+.container-btn-Manage__LinkUpdate__btnOne__LinkDelete {
+  width: 70px;
+  height: 30px;
+  color: white;
+  background-color: #cf3333;
+  font-size: 16px;
+  border-radius: 6px;
+  outline: none;
+}
+
+.container-btn-Manage__LinkUpdate__btnOne__LinkDelete:hover {
+  background-color: white;
+  color: #cf3333;
+  border: 1px solid #cf3333;
+}
+
+.container-btn-Manage__LinkUpdate__btnOne:hover {
+  color: white;
+  background-color: #cf3333;
+}
+
+.container-ManageProduct {
+  margin-right: 50px;
+  margin-left: 50px;
+}
+
+.container-ManageProduct__title {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.container-ManageProduct__title__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  list-style: none;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #cf3333;
+  padding-bottom: 10px;
+}
+
+.container-ManageProduct__title__list__name {
+  width: 20%;
+  font-size: 16px;
+}
+
+.container-ManageProduct__title__list__name__quantity {
+  width: 20%;
+  font-size: 16px;
+}
+
+.container-ManageProduct__title__list__name__quantity__price {
+  width: 20%;
+  font-size: 16px;
 }
 
 * {
